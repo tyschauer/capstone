@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tyschauer.com</title>
+        <link rel="stylesheet" href="stlye.css">
+        <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    </head>
+
+    <body onresize="resize()" onscroll="scroll()">
+        <div class="anchor" id="tyschauer"></div>
+        <div id = "banner">
+            <canvas id="canvas"></canvas>
+            <div id="bannerContent">
+                <div class="bannerCell">
+                    <h1 id = "bannerH1">ty schauer.</h1>
+                    <h2 id = "bannerH2">graphic design and web development.</h2>
+                </div>
+            </div>
+            <div id="black"></div>
+        </div>
+
+        <!--    nav    -->
+        <div id="nav">
+            <div id="navContent">
+                <div id="navLeft">
+                    <a href="#tyschauer" onclick="changeSlide(0)"><h1>ty schauer.</h1></a>
+                </div>
+                <div id="navRight">
+                    <div class="navLinks">
+                        <a href="#about"><div class="navLink">about.</div></a>
+                    </div>
+                    <div class="navLinks">
+                        <a href="#projects" onclick="changeSlide(0)"><div class="navLink">projects.</div></a>
+                    </div>
+                    <div class="navLinks">
+                        <a><div class="navLink" id="contactLink">contact.
+                            <!--        contact         -->
+                            <div id="contact">
+                                <h1>Ty Schauer</h1>
+                                <a href="mailto:tyschauer@gmail.com"><h1>tyschauer@gmail.com</h1></a>
+                            </div>
+                        </div></a>
+                        
+                    </div>
+                    <div class="navLinks">
+                        <a href="capstone.html"><div class="navLink">capstone.</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="height: 100vh;"></div>
+        <div id="content">
+            
+                <a href="#about">
+                    <div id="arrow">
+                        <div id="arrowLeft"></div>
+                        <div id="arrowRight"></div>
+                    </div>
+                    
+                </a>
+            
+
+            <!--    about  -->
+            <div class="anchor" id="about"></div>
+            <h1 style="margin: 0; padding: 50px 0; font-size: 75px;">ty schauer web design portfolio.</h1>
+            <div class="row">
+                <div class="rowCell">
+                    <img class="bottom " src="images/logobackground2.jpg">
+                    <img class="top " src="images/logobackground2.jpg">
+                </div>
+                <div class="rowCell text">
+                    <h1>purpose</h1>
+                    <p>The purpose of this website is to showcase my Lights Academy capstone project as well as function as a web portfolio to highlight the projects I have worked on throughout highschool. While making this website, I have documented my steps and what I learned through the process.
+                    </p>
+                    <h1>and objective.</h1>
+                    <p>My objective was to create a website that is both visually appealing and functional. I wanted it to be minimalistic and easy to navigate without sacrificing any content. 
+                    </p>
+                </div>
+            </div>
+            <div class="row odd">
+                <div class="rowCell">
+                    <img class="bottom " src="images/logobackground2.jpg">
+                    <img class="top " src="images/logobackground2.jpg">
+                </div>
+                <div class="rowCell text">
+                    <h1>experience</h1>
+                    <p>I took a web design class my freshman year of highschool. Since then I have further my learning  on my own in HTML, CSS, Java, and Javascript.
+                    </p>
+                    <h1>and future plans.</h1>
+                    <p>I plan to attend college for computer computer science and continue with graphic desing and web development.
+                    </p>
+                </div>
+            </div>
+            
+
+            <!--    logo grid   -->
+            <h1 style="margin: 0; padding: 50px 0; font-size: 75px;">project showcase.</h1>
+            <div class="anchor" id="projects"></div>
+            <div class="slideContainer">
+                <div class="slide">
+                    <div class="gridBackgroundImage">
+                        <img src="images/logobackground2.jpg">
+                    </div>
+                    <div class="gridPage">
+                        <div class="gridContainer">
+                            <div onclick="changeSlide(1)">
+                                <img src="logos/lights.png">
+                            </div>
+                            <div onclick="changeSlide(2)">
+                                <img src="logos/mowers.png">
+                            </div>
+                            <div onclick="changeSlide(3)">
+                                <img src="logos/realdistance.png">
+                            </div>
+                            <div onclick="changeSlide(4)">
+                                <img src="logos/slc.png">
+                            </div>
+                            <div onclick="changeSlide(5)">
+                                <img src="logos/autoslides.png">
+                            </div>
+                            <div onclick="changeSlide(6)">
+                                <img src="logos/astrolia.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--        lights                    -->
+                <div class="slide">
+                    <div class="showcaseBackgound">
+                        <iframe src="http://tyschauer.com/projects/lights/home.html" scrolling="no"></iframe>
+                    </div>
+                    <div class="showcaseFilm">
+    
+                    </div>
+                    <div class="showcase">
+                        <div>
+                            <a href="http://tyschauer.com/projects/lights/home.html"><h1>lights.com</h1></a>
+                        </div>
+                        <div>
+                            <h2>ideas behind <a target="_blank" href="http://tyschauer.com/projects/lights/home.html">Lights Academy</a>.</h2>
+                            <h3>- lots of information presented in a fun way.</h3>
+                            <h3>- more text than images.</h3>
+                            <h3>- clear call to action to apply.</h3>
+                            <h3>- interesting scrolling mechanics.</h3>
+                            <h3>- content presented a little at a time.</h3>
+                            <p style="text-align:center;text-indent: 0;">content gotten from <a target="_blank" href="https://www.lhsparker.org/lights-leadership-academy">here</a>.</p>
+                        </div>
+                    </div>
+                    <div class="slideHome" onclick="changeSlide(0)">
+                        <h1>back</h1>
+                    </div>
+                </div>
+
+                <!--        mowers                    -->
+                <div class="slide">
+                    <div class="showcaseBackgound">
+                        <iframe src="http://tyschauer.com/projects/mowers/home.html" scrolling="no"></iframe>
+                    </div>
+                    <div class="showcaseFilm">
+    
+                    </div>
+                    <div class="showcase">
+                        <div><a href="http://tyschauer.com/projects/mowers/home.html"><h1>mowers.com</h1></a></div>
+                        <div>
+                            <h2>ideas behind <a target="_blank" href="http://tyschauer.com/projects/mowers/home.html">Christian Mowers</a>.</h2>
+                                <h3>- more images than text.</h3>
+                                <h3>- images and quotes on grid.</h3>
+                                <h3>- tells a story through mostly images.</h3>
+                                <h3>- logo prominent in landing page.</h3>
+                                <h3>- a very welcoming vibe.</h3>
+                        </div>
+                    </div>
+                    <div class="slideHome" onclick="changeSlide(0)">
+                        <h1>back</h1>
+                    </div>
+                </div>
+
+                <!--        realdistance                    -->
+                <div class="slide">
+                    <div class="showcaseBackgound">
+                        <iframe src="http://tyschauer.com/projects/realdistance/home.html" scrolling="no"></iframe>
+                    </div>
+                    <div class="showcaseFilm">
+    
+                    </div>
+                    <div class="showcase">
+                        <div><a href="http://tyschauer.com/projects/realdistance/home.html"><h1>realdistance.com</h1></a></div>
+                        <div>
+                            <h2>ideas behind <a target="_blank" href="http://tyschauer.com/projects/realdistance/home.html">realdistance</a>.</h2>
+                            <h3>- simple grid layout, adapts well to mobile.</h3>
+                            <h3>- minimalist, white space utilized</h3>
+                            <h3>- very simple logo and navigation bar</h3>
+                            <h3>- equal text to image ratio</h3>
+                            <h3>- very overall modern feel</h3>
+                        </div>
+                    </div>
+                    <div class="slideHome" onclick="changeSlide(0)">
+                        <h1>back</h1>
+                    </div>
+                </div>
+
+                <!--        slc                    -->
+                <div class="slide">
+                    <div class="showcaseBackgound">
+                        <img src="images/slcBackground.PNG">
+                    </div>
+                    <div class="showcaseFilm">
+    
+                    </div>
+                    <div class="showcase">
+                        <div><a href="https://www.instagram.com/singleforlifeclub/"><h1>Instagram page</h1></a></div>
+                        <div>
+                            <h2>ideas behind <a target="_blank" href="">realdistance</a>.</h2>
+                            <h3>- simple grid layout, adapts well to mobile.</h3>
+                            <h3>- minimalist, white space utilized</h3>
+                            <h3>- very simple logo and navigation bar</h3>
+                            <h3>- equal text to image ratio</h3>
+                            <h3>- very overall modern feel</h3>
+                        </div>
+                    </div>
+                    <div class="slideHome" onclick="changeSlide(0)">
+                        <h1>back</h1>
+                    </div>
+                </div>
+
+                <!--        slides                    -->
+                <div class="slide" style="background-color: red;">
+                    <div class="slideHome" onclick="changeSlide(0)">
+                        <h1>back</h1>
+                    </div>
+                    <h1>autoslides</h1>
+                </div>
+
+                <!--        astrolia                    -->
+                <div class="slide">
+                    <div class="showcaseBackgound">
+                        <iframe src="http://tyschauer.com/projects/astrolia/home.html" scrolling="no"></iframe>
+                    </div>
+                    <div class="showcaseFilm">
+    
+                    </div>
+                    <div class="showcase">
+                        <div><a href="http://tyschauer.com/projects/lights/home.html"><h1>lights.com</h1></a></div>
+                        <div>
+                            <h2>ideas behind <a target="_blank" href="">realdistance</a>.</h2>
+                            <h3>- simple grid layout, adapts well to mobile.</h3>
+                            <h3>- minimalist, white space utilized</h3>
+                            <h3>- very simple logo and navigation bar</h3>
+                            <h3>- equal text to image ratio</h3>
+                            <h3>- very overall modern feel</h3>
+                        </div>
+                    </div>
+                    <div class="slideHome" onclick="changeSlide(0)">
+                        <h1>back</h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
